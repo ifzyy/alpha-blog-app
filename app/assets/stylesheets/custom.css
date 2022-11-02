@@ -1,0 +1,25 @@
+.bg-blue {
+    background-color: #08088A;
+}
+
+.navbar-brand {
+    float: left;
+    font-size: 1.7em;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    color: red;
+}
+.jumbotron {
+    background-image:  url("../images/blog.jpg")
+}
+
+.nav-link {
+    color: white;
+}
+.center {
+    text-align: center;
+}

@@ -1,0 +1,9 @@
+<h1>Showing all articles</h1>
+<p class="header"><%= link_to "create article", new_article_path%></p>
+<% @articles.each do | article | %>
+<p>Title: <%= article.title%></p>
+<p>Description:<%= article.description %></p>
+<button> <%= link_to "edit", edit_article_path(article)%> </button>
+<button> <%= link_to "show", article_path(article)%> </button>
+<button> <%= link_to "delete", article_path(article), method: :delete, data: {confirm: "are you sure?"} %></button>
+<% end %>
