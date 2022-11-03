@@ -1,18 +1,41 @@
 <div class="card text-center">
   <div class="card-header">
-  <h5 class="card-title">Title: <%= @article.title%></h5>
+    <h5 class="card-title">Title: <%= @article.title%></h5>
   </div>
   <div class="card-body">
+    <h4 style="text-align: center">created by:</h4>
+    <div class="contor">
+      <div class="card mb-5 center" style="max-width: 540px">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <%= link_to gravatar_for(@article.user,size:150),
+            user_path(@article.user), class: "img-fluid rounded-start"%>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">
+                <%= link_to @article.user.username, user_path(@article.user)%>
+              </h5>
+              <p class="card-text">I am a teacher from england</p>
+              <p class="card-text">
+                <small class="text-muted"
+                  ><%= pluralize(@article.user.articles.count, "article") if
+                  @article.user.articles %></small
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <h5 class="card-title">Description:</h5>
-    <p class="card-text"> <%= @article.description %></p>
+    <p class="card-text"><%= @article.description %></p>
     <div class="but">
-   <%= link_to "edit this article", edit_article_path(@article), class:"btn btn-primary" %> 
-   <%= link_to "delete this article", article_path(@article), method: :delete, data: {confirm: "are you sure?"}, class:"btn btn-danger" %>
-    <%= link_to "view all articles", articles_path, class:"btn btn-success"%>
- 
-   </div>
+      <%= link_to "edit this article", edit_article_path(@article), class:" btn
+      btn-primary" %> <%= button_to 'delete this article',
+      article_path(@article),method: :delete, class:" btn btn-danger"%> <%=
+      link_to "view all articles", articles_path, class:" btn btn-success"%>
+    </div>
   </div>
-  <div class="card-footer text-muted">
-    2 days ago
-  </div>
+  <div class="card-footer text-muted">Posted <%= time_ago_in_words(@article.created_at)%></div>
 </div>

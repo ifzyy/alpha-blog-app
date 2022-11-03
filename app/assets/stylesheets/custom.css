@@ -1,108 +1,139 @@
 .bg-blue {
-    background-color: #08088A;
+  background-color: #08088a;
 }
 
 .navbar-brand {
-    float: left;
-    font-size: 1.7em;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: bold;
+  float: left;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .navbar-brand:hover {
-    color: red;
+  color: red;
 }
 
 .jumbotron {
-    height: 400px;
-    background: #211e1cb3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 50px;
+  height: 400px;
+  background: #211e1cb3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 50px;
 }
 
 .ontop {
-    background-image: url("blog.png");
-    background-size: cover;
-    margin-top: 30px;
-    border-radius: 50px;
+  background-image: url("blog.png");
+  background-size: cover;
+  margin-top: 30px;
+  border-radius: 50px;
 }
 
 .nav-link {
-    color: white;
+  color: white;
 }
+
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 .alpha {
-    font-size: 60px;
-    color: black;
+  font-size: 60px;
+  color: black;
 }
 
 .footer {
-    margin-top: 180px;
-    display: flex;
-    background-color: #08088A;
-    color: white;
-    padding: 20px 40px 20px 40px;
-    font-size: 20px;
-    justify-content: space-between;
+  margin-top: 180px;
+  display: flex;
+  background-color: #08088a;
+  color: white;
+  padding: 20px 40px 20px 40px;
+  font-size: 20px;
+  justify-content: space-between;
 }
 
 .mes {
-    background-color: green;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 20px;
+  background-color: green;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
 }
+
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
+
 .panel {
-    background: #eec1c1;
-    padding: 20px;
-    color: red;
+  background: #eec1c1;
+  padding: 20px;
+  color: red;
 }
+
 .but {
-    border-top: 1px solid black;
-    padding: 10px;
+  border-top: 1px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .card-text {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
+
 .card-title {
-    font-weight: 30px;
-    font-weight: bold;
+  font-weight: 30px;
+  font-weight: bold;
 }
+
 .card {
-    background-color: transparent;
+  background-color: transparent;
 }
+
 .cont {
-    display: flex;
-    justify-content: center;
-   flex-direction: column;
-   align-items: center;
-   gap: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.small {
+  display: flex;
+  flex-direction: column;
+  font-size: 17px;
 }
 
 .butt {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-@media (max-width: 768px) {
-    .butt,.but {
- display: flex;
- align-items: center;
- flex-direction: column;
- gap: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
+.conto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.contor {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+@media (max-width: 768px) {
+  .butt,
+  .but {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+  }
 }
