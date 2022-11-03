@@ -1,5 +1,18 @@
-<h1>showing selcted article</h1>
-<p>Title: <%= @article.title%></p>
-<p>Description:<%= @article.description %></p>
-<button> <%= link_to "edit", edit_article_path(@article)%> </button>
-<button> <%= link_to "Home", articles_path%></button>
+<div class="card text-center">
+  <div class="card-header">
+  <h5 class="card-title">Title: <%= @article.title%></h5>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Description:</h5>
+    <p class="card-text"> <%= @article.description %></p>
+    <div class="but">
+   <%= link_to "edit this article", edit_article_path(@article), class:"btn btn-primary" %> 
+   <%= link_to "delete this article", article_path(@article), method: :delete, data: {confirm: "are you sure?"}, class:"btn btn-danger" %>
+    <%= link_to "view all articles", articles_path, class:"btn btn-success"%>
+ 
+   </div>
+  </div>
+  <div class="card-footer text-muted">
+    2 days ago
+  </div>
+</div>

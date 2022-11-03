@@ -13,8 +13,22 @@
 .navbar-brand:hover {
     color: red;
 }
+
 .jumbotron {
-    background-image:  url("../images/blog.jpg")
+    height: 400px;
+    background: #211e1cb3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50px;
+}
+
+.ontop {
+    background-image: url("blog.png");
+    background-size: cover;
+    margin-top: 30px;
+    border-radius: 50px;
 }
 
 .nav-link {
@@ -22,4 +36,73 @@
 }
 .center {
     text-align: center;
+}
+
+.alpha {
+    font-size: 60px;
+    color: black;
+}
+
+.footer {
+    margin-top: 180px;
+    display: flex;
+    background-color: #08088A;
+    color: white;
+    padding: 20px 40px 20px 40px;
+    font-size: 20px;
+    justify-content: space-between;
+}
+
+.mes {
+    background-color: green;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+li {
+    list-style-type: none;
+}
+.panel {
+    background: #eec1c1;
+    padding: 20px;
+    color: red;
+}
+.but {
+    border-top: 1px solid black;
+    padding: 10px;
+}
+
+.card-text {
+    margin-bottom: 20px;
+}
+.card-title {
+    font-weight: 30px;
+    font-weight: bold;
+}
+.card {
+    background-color: transparent;
+}
+.cont {
+    display: flex;
+    justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   gap: 30px;
+}
+
+.butt {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+@media (max-width: 768px) {
+    .butt,.but {
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ gap: 15px;
+}
+
 }
