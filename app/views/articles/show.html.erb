@@ -30,12 +30,17 @@
     </div>
     <h5 class="card-title">Description:</h5>
     <p class="card-text"><%= @article.description %></p>
+    <% if logged_in? && current_user == @article.user %>
     <div class="but">
       <%= link_to "edit this article", edit_article_path(@article), class:" btn
       btn-primary" %> <%= button_to 'delete this article',
       article_path(@article),method: :delete, class:" btn btn-danger"%> <%=
       link_to "view all articles", articles_path, class:" btn btn-success"%>
     </div>
+    <% else %>
+    <%=
+      link_to "view all articles", articles_path, class:" btn btn-success"%>
+      <% end %>
   </div>
   <div class="card-footer text-muted">Posted <%= time_ago_in_words(@article.created_at)%></div>
 </div>

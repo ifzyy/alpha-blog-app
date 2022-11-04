@@ -1,0 +1,14 @@
+<h1  style="text-align:center">Log in to alpha blog</h1>
+
+<%= form_for(:session, :html =>{ class: "form horizontal", role: "form"}, url: login_path)do |f| %>
+<div class="mb-3 mt-3">
+<%= f.label :email, class: "form-label" %><br>
+<%= f.email_field :email, class: "form-control",placeholder: "enter your email" %>
+</div>
+<div class="mb-3">
+<%= f.label :password, class: "form-label" %><br>
+<%= f.password_field :password, class: "form-control",autocomplete: "off", placeholder: "enter password" %>
+</div>
+<%= f.submit "Login", class: "btn btn-primary btn-lg" %>
+
+<% end %>

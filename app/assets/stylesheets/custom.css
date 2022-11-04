@@ -1,5 +1,16 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+
 .bg-blue {
   background-color: #08088a;
+}
+
+.navbar {
+  margin-bottom: 2.4%;
 }
 
 .navbar-brand {
@@ -15,20 +26,19 @@
 }
 
 .jumbotron {
-  height: 400px;
+
   background: #211e1cb3;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border-radius: 50px;
+  text-align: center;
 }
 
 .ontop {
   background-image: url("blog.png");
   background-size: cover;
-  margin-top: 30px;
-  border-radius: 50px;
+  margin-bottom: 50px;
 }
 
 .nav-link {
@@ -45,13 +55,13 @@
 }
 
 .footer {
-  margin-top: 180px;
   display: flex;
   background-color: #08088a;
   color: white;
   padding: 20px 40px 20px 40px;
   font-size: 20px;
   justify-content: space-between;
+  margin-top: auto;
 }
 
 .mes {
@@ -126,9 +136,34 @@ li {
   justify-content: center;
 }
 
+.nav-linnk {
+  color: white;
+  background-color: #08088a;
+  border: none;
+}
 
+.smalll {
+  color: white;
+  font-size: 18px;
+  margin-top: 60px;
+}
+
+.b {
+  margin-bottom: 50px;
+}
+
+.btnn {
+  margin-top: 20px;
+}
+
+.second-nav {
+  margin-right: 100px;
+}
 
 @media (max-width: 768px) {
+.second-nav {
+  display: none;
+}
   .butt,
   .but {
     display: flex;

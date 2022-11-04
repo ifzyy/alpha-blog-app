@@ -1,7 +1,19 @@
+<% if logged_in? %>
+<%= will_paginate @pages %>
+
+<%= render "partials/article", obj: @pages%>
+
+<%= will_paginate @pages%>
+<% else%>-
 <div class="ontop">
-<div class="center jumbotron">
+<div class=" jumbotron">
 <img src="images/blog.png" alt="">
 <h1 class="alpha">ALPHA BLOG</h1>
-<%= link_to "Sign up now","signup", class: "btn btn-primary btn-lg" %>
+<small class="smalll">Create an account?</small>
+<%= link_to "Sign up now", "signup", class: "btn btn-primary btn-lg btnn" %>
+
+<small class="smalll">Already have an account?</small>
+<%= link_to "Login", "login", class: "btn btn-primary btn-lg b" %>
 </div>
 </div>
+<% end %>
