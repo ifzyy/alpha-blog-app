@@ -2,7 +2,6 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  overflow: scroll;
 }
 
 .bg-blue {
@@ -25,8 +24,12 @@ body {
   color: red;
 }
 
-.jumbotron {
+.delete {
+  color: red;
+  font-weight: bold;
+}
 
+.jumbotron {
   background: #211e1cb3;
   display: flex;
   justify-content: center;
@@ -160,10 +163,79 @@ li {
   margin-right: 100px;
 }
 
-@media (max-width: 768px) {
-.second-nav {
+.edit {
+  border-bottom: 0;
+  border-right: 0;
+  border-top: 0;
+  border-left: 1px solid gray;
+  box-shadow: none;
+  outline: none;
+  font-weight: 400;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 0;
+  color: black;
+  width: 70%;
+  padding: 10px;
+}
+
+.edit::placeholder {
+  color: #b3b3b1;
+  font-weight: bold;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 0;
+}
+
+label {
   display: none;
 }
+.edit2::selection {
+  background-color: lightgray;
+}
+.edit2::placeholder {
+    color: #b3b3b1;
+      font-weight: bold;
+      font-size: 20px;
+      font-weight: 400;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.25;
+      letter-spacing: 0;
+}
+
+.edit2 {
+  border-bottom: 0;
+  border-right: 0;
+  border-top: 0;
+  border-left: 0;
+  box-shadow: none;
+  outline: none;
+  font-weight: 400;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75;
+  letter-spacing: 0;
+  color: black;
+  padding: 10px;
+  width: 80%;
+}
+
+.formm {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10% 0 20%;
+}
+
+@media (max-width: 768px) {
+  .second-nav {
+    display: none;
+  }
+
   .butt,
   .but {
     display: flex;

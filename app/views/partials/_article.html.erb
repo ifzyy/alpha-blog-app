@@ -13,7 +13,7 @@
           <small>Created: <%= time_ago_in_words(article.created_at)%> ago</small>
           <small>last updated: <%= time_ago_in_words(article.updated_at)%> ago</small>
         </div>
-        <% if logged_in? && current_user == article.user%>
+        <% if logged_in? && (current_user == article.user || current_user.admin?)%>
           <div class="butt">
             <%= link_to "edit this article" , edit_article_path(article), class:" btn btn-primary" %>
               <%= button_to 'delete this article' , article_path(article),method: :delete, class:" btn btn-danger"%>

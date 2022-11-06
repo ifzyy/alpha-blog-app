@@ -14,7 +14,8 @@
           <div class="col-md-8">
             <div class="card-body">
               <h5 class="card-title">
-                <%= link_to @article.user.username, user_path(@article.user)%>
+                <%= link_to @article.user.username, use
+                _path(@article.user)%>
               </h5>
               <p class="card-text">I am a teacher from england</p>
               <p class="card-text">
@@ -30,7 +31,7 @@
     </div>
     <h5 class="card-title">Description:</h5>
     <p class="card-text"><%= @article.description %></p>
-    <% if logged_in? && current_user == @article.user %>
+    <% if logged_in? && (current_user == @article.user || current_user.admin?) %>
     <div class="but">
       <%= link_to "edit this article", edit_article_path(@article), class:" btn
       btn-primary" %> <%= button_to 'delete this article',

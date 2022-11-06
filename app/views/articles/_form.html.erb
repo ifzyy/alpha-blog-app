@@ -1,15 +1,16 @@
-
-<%= form_for @article do |f| %>
+<div class="formm">
+<%= form_for  @article do |f| %>
 <div class="mb-3">
-<%= f.label :title, class: "form-label" %>
-<%= f.text_field :title, class: "form-control" %>
+<%= f.label :title, class: " form-label" %>
+<%= f.text_field :title, class: "edit",  placeholder: "Title" %>
 </div>
 <div class="mb-3">
 <%= f.label :description, class: "form-label" %><br>
-<%= f.text_area :description, class: "form-control" %>
+<%= f.text_area :description, class: "edit2", placeholder: "Tell your story....", datascroll:"native", rows: "10", col:"20" %>
 </div>
 <p>
 <%= f.submit class: "btn btn-primary" %>
 
 <% end %>
 
+</div>

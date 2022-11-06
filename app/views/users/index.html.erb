@@ -12,6 +12,9 @@
         <h5 class="card-title"><%= link_to user.username, user_path(user)%></h5>
         <p class="card-text">I am a teacher from england</p>
         <p class="card-text"><small class="text-muted"><%= pluralize(user.articles.count, "article") if user.articles %></small></p>
+        <% if logged_in? && current_user.admin? %>
+          <%= button_to 'delete this user', user_path(user),method: :delete, class:" btn btn-danger"%>
+        <% end %>
       </div>
     </div>
   </div>
