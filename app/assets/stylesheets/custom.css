@@ -1,3 +1,5 @@
+@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-icons/font/bootstrap-icons';
 body {
   min-height: 100vh;
   display: flex;
@@ -15,7 +17,7 @@ body {
 .navbar-brand {
   float: left;
   font-size: 1.7em;
-  color: #fff;
+  color: #fff !important;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -45,7 +47,7 @@ body {
 }
 
 .nav-link {
-  color: white;
+  color: white !important;
 }
 
 .center {
