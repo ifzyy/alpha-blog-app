@@ -1,6 +1,6 @@
 require "test_helper"
 
-class BallTest < ActiveSupport::TestCase
+class ArticleCategoryTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
