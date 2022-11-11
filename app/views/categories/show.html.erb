@@ -1,0 +1,8 @@
+<h1  style="text-align:center" class="mb-4"><%= "category:" + @category.name %></h1>
+
+<%= will_paginate @category_articles %>
+
+<%= render "partials/article", obj: @category_articles%>
+
+<%= will_paginate @category_articles%>
+

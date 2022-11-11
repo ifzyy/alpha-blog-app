@@ -8,6 +8,9 @@
         <p class="card-text">
           <%= article.description %>
         </p>
+           <% if article.categories.any? %>
+     <p class="badges">Categories: <%= render article.categories %></p>
+     <%end%>
         <div class="small">
           <small>Created by: <%= article.user.username if article.user %></small>
           <small>Created: <%= time_ago_in_words(article.created_at)%> ago</small>

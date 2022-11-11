@@ -191,7 +191,7 @@ li {
   letter-spacing: 0;
 }
 
-label {
+.form-label {
   display: none;
 }
 .edit2::selection {
@@ -231,10 +231,33 @@ label {
   margin: 0 10% 0 20%;
 }
 
+.check-part {
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.badge > a {
+  color: white;
+text-align: center;
+text-decoration: none;
+}
+.badges {
+  margin-top: 20px;
+  display: flex;
+  gap:  10px;
+}
 @media (max-width: 768px) {
   .second-nav {
     display: none;
   }
+    .check-part {
+      display: flex;
+      flex-direction: column;
+      gap: 10;
+      margin-bottom: 20px;
+    }
 
   .butt,
   .but {

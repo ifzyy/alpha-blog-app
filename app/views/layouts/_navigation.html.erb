@@ -45,7 +45,7 @@
               </li>
               <% Category.all.each do |category|%>
               <li>
-                <%= link_to "#{category.name}", articles_path(category) ,class:
+                <%= link_to "#{category.name}", category_path(category) ,class:
                 "dropdown-item" %>
               </li>
               <%end%>
@@ -83,6 +83,10 @@
               class: "dropdown-item" %>
             </li>
             <li>
+                <li>
+              <%= link_to "Create new category" ,new_category_path ,
+              class: "dropdown-item" %>
+            </li>
               <%= button_to "Delete your account" , user_path(current_user),
               method: :delete, class: "dropdown-item delete" %>
             </li>
