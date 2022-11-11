@@ -246,12 +246,11 @@ text-decoration: none;
 .badges {
   margin-top: 20px;
   display: flex;
+  flex-wrap: wrap;
   gap:  10px;
 }
 @media (max-width: 768px) {
-  .second-nav {
-    display: none;
-  }
+
     .check-part {
       display: flex;
       flex-direction: column;
@@ -265,5 +264,9 @@ text-decoration: none;
     align-items: center;
     flex-direction: column;
     gap: 15px;
+  }
+  
+  .formo{
+display: none !important;
   }
 }
